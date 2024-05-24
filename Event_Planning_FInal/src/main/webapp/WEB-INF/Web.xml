@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">     
+	<servlet>
+		<servlet-name>eventUploaderServlet</servlet-name>
+		<servlet-class>userRegister.Controller.A_eventUploaderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>eventUploaderServlet</servlet-name>
+		<url-pattern>/eventUploaderServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>userRegister.Controller.A_eventLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>UploadDbServlet</servlet-name>
+		<servlet-class>userRegister.Controller.D_SysadminInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadDbServlet</servlet-name>
+		<url-pattern>/UploadDbServlet</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>Dashboard_loginServlet</servlet-name>
+		<servlet-class>userRegister.Controller.A_eventRetrieveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Dashboard_loginServlet</servlet-name>
+		<url-pattern>/Dashboard_loginServlet</url-pattern>
+	</servlet-mapping>	
+
+	<servlet>
+		<servlet-name>UpdateMyData_Servlet</servlet-name>
+		<servlet-class>userRegister.Controller.A_eventUpdateMyData_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateMyData_Servlet</servlet-name>
+		<url-pattern>/UpdateMyData_Servlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteMyData_Servlet</servlet-name>
+		<servlet-class>userRegister.Controller.A_eventDeleteMyData_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteMyData_Servlet</servlet-name>
+		<url-pattern>/DeleteMyData_Servlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Search_Servlet</servlet-name>
+		<servlet-class>userRegister.Controller.D_SysadminRetrieveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search_Servlet</servlet-name>
+		<url-pattern>/Search_Servlet</url-pattern>
+	</servlet-mapping>
+<!-- Manaram's part -->	
+	<servlet> 
+         <servlet-name>updateMTservelet</servlet-name> 
+         <servlet-class>userRegister.Controller.D_SysadminRetrieveAllServelet</servlet-class>   
+     </servlet>  
+     
+     <servlet-mapping>
+         <servlet-name>update</servlet-name>
+         <url-pattern>/updateMTservelet</url-pattern>
+     </servlet-mapping>     
+     
+     <servlet> 
+         <servlet-name>updateFinalservelet</servlet-name> 
+         <servlet-class>userRegister.Controller.D_SysadminUpdateServelet</servlet-class>   
+     </servlet>  
+     
+     <servlet-mapping>
+         <servlet-name>updateFinal</servlet-name>
+         <url-pattern>/updateFinalservelet</url-pattern>
+     </servlet-mapping>                                                                            
+     
+     <servlet> 
+         <servlet-name>DeleteUpServelet</servlet-name> 
+         <servlet-class>userRegister.Controller.D_SysadminDeleteServlet</servlet-class>   
+     </servlet>  
+     
+     <servlet-mapping>
+         <servlet-name>deleteUD</servlet-name>
+         <url-pattern>/DeleteUpServelet</url-pattern>
+     </servlet-mapping>
+     
+ <!-- Dulaj's Part -->   
+    <servlet>
+		<servlet-name>updatetvseriesServlet</servlet-name>
+		<servlet-class>userRegister.Controller.C_AccountantUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatetvseriesServlet</servlet-name>
+		<url-pattern>/updatetvseriesServlet</url-pattern>	
+	</servlet-mapping>  
+	
+	<servlet>
+		<servlet-name>getUpdatedList_Servlet</servlet-name>
+		<servlet-class>userRegister.Controller.C_AccountantRetrieveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>getUpdatedList_Servlet</servlet-name>
+		<url-pattern>/getUpdatedList_Servlet</url-pattern>	
+	</servlet-mapping>   
+             
+	<servlet>
+		<servlet-name>tvseriesinsert</servlet-name>
+		<servlet-class>userRegister.Controller.C_AccountantInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>tvseriesinsert</servlet-name>
+		<url-pattern>/tvseriesinsert</url-pattern>	
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatetvseries</servlet-name>
+		<servlet-class>userRegister.Controller.updatetvseries</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updatetvseries</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>		
+
+	<servlet>
+		<servlet-name>tvseriessubmit</servlet-name>
+		<servlet-class>userRegister.Controller.tvseriessubmit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>tvseriesinsert</servlet-name>
+		<url-pattern>/tvseriesinsert</url-pattern>	
+	</servlet-mapping>		
+
+	<servlet>
+		<servlet-name>tvseriesdelete</servlet-name>
+		<servlet-class>userRegister.Controller.C_AccountantDeletetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>tvseriesdelete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+  <!-- Abitha's Part -->
+  	<servlet>
+		<servlet-name>MovieLogServlet</servlet-name>
+		<servlet-class>userRegister.Controller.B_EventplannerRetrieveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/MovieLogServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MovieInsert</servlet-name>
+		<servlet-class>userRegister.Controller.B_EventplannerInsertServlet</servlet-class>
+	</servlet> 
+	<servlet-mapping>
+		<servlet-name>MovieInsert</servlet-name>
+		<url-pattern>/MovieInsert</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateMovieServlet</servlet-name>
+		<servlet-class>userRegister.Controller.B_EventplannerUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateMovie</servlet-name>
+		<url-pattern>/UpdateMovieServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteMovieServlet</servlet-name>
+		<servlet-class>userRegister.Controller.B_EventplannerDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteMovie</servlet-name>
+		<url-pattern>/DeleteMovieServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
